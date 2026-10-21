@@ -1,0 +1,2 @@
+[console_scripts]
+apix = main:main
