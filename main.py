@@ -1,22 +1,22 @@
 import argparse
 import sys
-from apix.discovery import discover_surface
-from apix.checks import run_all_checks
+from apex.discovery import discover_surface
+from apex.checks import run_all_checks
 
 BANNER = """
 \033[35m
-   ___    ____ _____  __
-  / _ |  / __ \\/_  _/ |  |/_/
- / __ |_/ /_/ /_/ /  _>  <
-/_/ |_(_)____/____/ /_/|_|
+  _    ____  _______  __
+   / \\  |  _ \\| ____\\ \\/ /
+  / _ \\ | |_) |  _|  \\  / 
+ / ___ \\|  __/| |___ /  \\ 
+/_/   \\_\\_|   |_____/_/\\_\\
 \033[0m
-\033[90m        API Security Scanner — OWASP API Top 10
-        github.com/Ayan946/apix\033[0m
+\033[90m        API Security Scanner\033[0m
 """
 
 
 def parse_args():
-    p = argparse.ArgumentParser(prog="apix", description="OWASP API Top 10 Scanner")
+    p = argparse.ArgumentParser(prog="apex", description="OWASP API Top 10 Scanner")
     p.add_argument("-t", "--target", required=True, help="Target API base URL")
     p.add_argument("-o", "--output", help="Save output to file")
     return p.parse_args()

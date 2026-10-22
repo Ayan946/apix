@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name="apix",
+    name="apex",
     version="1.0",
     py_modules=["main"],
-    packages=["apix"],
+    packages=["apex"],
     install_requires=["requests", "pyjwt"],
-    entry_points={"console_scripts": ["apix=main:main"]},
+    entry_points={"console_scripts": ["apex=main:main"]},
 )
